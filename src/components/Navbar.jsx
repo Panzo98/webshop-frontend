@@ -40,7 +40,6 @@ export default function Navbar({ isCartOpen, setIsCartOpen }) {
       <div className="text-base hidden lg:w-1/4 md:w-1/2 lg:flex justify-between">
         <Link href="/">Home</Link>
         <Link href="/shop">Shop</Link>
-        <Link href="/about">About</Link>
         <Link href="/contact">Contact</Link>
       </div>
       <div className="w-1/12 justify-center flex">
@@ -128,7 +127,6 @@ export default function Navbar({ isCartOpen, setIsCartOpen }) {
         <div className="lg:hidden  bg-white w-48 py-2 px-4 shadow">
           <Link href="/">Home</Link>
           <Link href="/shop">Shop</Link>
-          <Link href="/about">About</Link>
           <Link href="/contact">Contact</Link>
         </div>
       )}

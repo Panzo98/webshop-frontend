@@ -1,8 +1,19 @@
 import React from "react";
 import Image from "next/image";
+import { useRouter } from "next/router";
+import BreadCrubms from "./BreadCrumbs";
+import Link from "next/link";
+
 export default function ShopBanner() {
+  const { asPath, pathname } = useRouter();
+  const filteredPathname = pathname.substring(1);
+  const capitalizedPathname =
+    filteredPathname.charAt(0).toUpperCase() + filteredPathname.slice(1);
+
   return (
-    <div>
+    <div className="relative">
+      <BreadCrubms path={capitalizedPathname} />
+
       <Image
         src="/shop banner.webp"
         alt="shop banner"

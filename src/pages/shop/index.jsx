@@ -8,7 +8,7 @@ export default function index() {
   return (
     <div>
       <ShopBanner />
-      <Filter />
+      {/* <Filter /> */}
       <ListOfProducts />
       <ShopFeaturesBanner />
     </div>
